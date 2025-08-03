@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  ListViewController.swift
 //  TrendingMovie
 //
 //  Created by Arqam Owais on 03/08/2025.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
