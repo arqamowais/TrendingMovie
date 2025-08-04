@@ -25,4 +25,15 @@ class ListViewModel {
     func numberOfRows(inSection section: Int) -> Int {
         return 10
     }
+    
+    func getData() {
+        TrendingMoviesAPIClient.getTrendingMovies { result in
+            switch result {
+                case .success(let movies):
+                print(movies)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

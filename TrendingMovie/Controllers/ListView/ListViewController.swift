@@ -20,6 +20,11 @@ class ListViewController: UIViewController {
         self.configureView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.viewModel.getData()
+    }
+    
     // MARK: - Private Methods
     
     private func configureView() {
